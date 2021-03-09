@@ -28,6 +28,9 @@ TARGET_BOOT_ANIMATION_RES := 1080
 # Gapps Config
 TARGET_GAPPS_ARCH := arm64
 
+# Google Recorder
+TARGET_SUPPORTS_GOOGLE_RECORDER := true
+
 # Inherit from X00T device
 $(call inherit-product, $(LOCAL_PATH)/device.mk)
 
@@ -40,7 +43,7 @@ PRODUCT_MODEL := ZenFone Max Pro M1
 PRODUCT_GMS_CLIENTID_BASE := android-asus
 
 TARGET_VENDOR := asus
-TARGET_VENDOR_PRODUCT_NAME := X00T
+TARGET_VENDOR_PRODUCT_NAME := X00TD
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRIVATE_BUILD_DESC="coral-user 11 RP1A.200720.009 6720564 release-keys"
